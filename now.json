@@ -1,0 +1,28 @@
+{
+  "version": 2, 
+  "builds": [
+    {
+      "src": "build/index.js",
+      "use": "@now/node"
+    }, {
+      "src": ".env",
+      "use": "@now/static"
+    }
+  ],
+  "env": {
+    "PROJECT_ID": "testing-fvakcr",
+    "PRIVATE_KEY": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCoQ0kFWlc3v6+b\nlvauW9pxguzMt4GwiAxbsuTcKYuCgQYL4wNdFNCbQrnDg6ZlFWVIjC9jCat2RH6h\nRbUnRuuXeFAY0ggc7/RjzlpfqE/KtkVaaSyXYX8LdHAu37FmIzjCJpRVn89e5Dre\ncwIWw1QDJEOHpNAO5dnDeEo2qXdgNvjitwHLGvBwCRVQ8+loQHInbpBEuRMsQL//\nS/0f5W5LD/l6HMOpMMhjV/+gJTqdRAtkZzXuM6xbWN3/h6coLkqvrz6dKulb/STv\n1HyFqOwH3meSP95szc3LWEzro/hPwfYgGOpaVG+cB2m0GMKvQsFx2ENQVo32A4iU\nyFnRmMHLAgMBAAECggEABVUC617n6wxYARMEavuq+g3ieY19i2qRE0oH/P7g1n6t\nAmA43kPamHdbPtoQW9B7W5RieNdfNGnXP9hFqIj6AXX+k8rHSj0QZL+u49+H9JSL\nsUgqV/tVW1ErsB1gMcX/KafihRQbYWM6IL9KqA4CJSQkP7HC8ukcJxjL9HXj71iO\nQvn1sSHH6LAkvqn9huP5PjmWMAgACeIZUBA9PYLf7ilFeNAuBIjVQjbPV2LSA0t3\nCX7bJGP0uwHyiPtF3NFOIJxR58UI8fbr4/HuJQ8lb9CTE78LunmeYDscNkB7qpCQ\n9E3b0jQZ1U6kM2tDBnUBGzy3TlDe7vTxWfXYXCTzAQKBgQDRT48udvX/vddFKvnJ\nQnCu1Ko7rUvq5xEncjTxwptWWYBRh2x8o/sgNBth7wNwi4vcigIf5aiokG57pKsb\nD+GugZDd3mcmx+OIV6Qh8UAj/oHCCR9pZpzSgFHJmxS1K1pXuoZp6RZnI+yAJmBl\nolWzPNUK9KazCVuubDtCQCHOuQKBgQDNy7t3PL1Em4HPHKqFad3yYvwxe6TEPdKB\naARxaRvdCtrxdClSRdgl1i45VCtH71GI90CegiVOE9rosxhAi8eDfOeiHV3nMFHj\ncJ4mC3k87DhlGgYX8WpFBmeXqIkb6bOC+T53wbhoWEsMAvBez5W864SuhH20Sg7E\nNElaxkIyowKBgQDB75h38et+2TRDt00XyILFyvAsOSaVcSF4zh32P11UhbsaT4Ma\nfYmqTf1tIVurhPDDF/BeA5nhDWoBEBMmEPIHka9bk705to3A/4tpk7HdZ+xsj61W\nKKh3dkPRq+pk7tVXYdE3AqwqRqPUHTrGEMKdP2kaLJLkYnBbTZcejHOGqQKBgQDH\nBpJtlZNhx5b5yzpqvmEEqpBF9tL5auSrfAJYABQPaREnVHUl+SA6L3ISxYD6F8vd\nz2lyImGbqf4a8CGzQruYQXLuyMHo9UUs1dxM5OnCbp13wXxFKZfh23jSJg87rH+M\nWin8vZ/vYfxqSGlY+B9TTt7JvJ6pfrnbLMoIfRbGSwKBgESiATcfx8Kt2C+kytOm\nOj+eRcRMrrGLXlMARQhHhtEprLYFhXWhL3oFulVhb7zUELlMlKv6qU9NPJaJxO/W\niFKUOsT8WFnT53B3mRtOh77y8bhIYsbBWmQXX7X81TVdKjSXpHFx9T8C1ekNv9eV\nOJoMnNXDBxRPpa9PYDKbc0oJ\n-----END PRIVATE KEY-----\n",
+    "CLIENT_EMAIL": "dialogflow-nmjifp@testing-fvakcr.iam.gserviceaccount.com"
+  },
+  "routes": [
+    { 
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+        "Access-Control-Allow-Headers": "X-Requested-With, Content-Type, Accept"
+      },
+      "src": "/(.*)",
+      "dest": "build/index.js" 
+    }
+  ]
+}
